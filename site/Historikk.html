@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr"><head><title>Forskningshistorikk</title><meta charset="utf-8"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Levn — Fra kilder til livshistorier"/><meta property="og:title" content="Forskningshistorikk"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Forskningshistorikk"/><meta name="twitter:description" content="Til forskningsstartsiden. Dette er historiske arbeidsmeldinger med status på det tidspunktet de ble skrevet."/><meta property="og:description" content="Til forskningsstartsiden. Dette er historiske arbeidsmeldinger med status på det tidspunktet de ble skrevet."/><meta property="og:image:alt" content="Til forskningsstartsiden. Dette er historiske arbeidsmeldinger med status på det tidspunktet de ble skrevet."/><meta property="og:image" content="https://steinar-opphus.github.io/levn-pages/static/og-image.png"/><meta property="og:image:url" content="https://steinar-opphus.github.io/levn-pages/static/og-image.png"/><meta name="twitter:image" content="https://steinar-opphus.github.io/levn-pages/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="steinar-opphus.github.io/levn-pages"/><meta property="og:url" content="https://steinar-opphus.github.io/levn-pages/Historikk"/><meta property="twitter:url" content="https://steinar-opphus.github.io/levn-pages/Historikk"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="Til forskningsstartsiden. Dette er historiske arbeidsmeldinger med status på det tidspunktet de ble skrevet."/><meta name="generator" content="Quartz"/><link href="./index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcGFkZGluZzogMnJlbTtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><script src="./prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script></head><body data-slug="Historikk"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><header class="levn-topbar"><a class="levn-brand internal" href="./" aria-label="Levn – hjem">Levn</a><span class="levn-preview">Offentlig</span><button type="button" class="levn-menu-toggle" aria-label="Åpne hovedmeny" aria-expanded="false" aria-controls="levn-menu">Meny <span aria-hidden="true">☰</span></button><div id="levn-menu" class="levn-menu"><nav class="levn-navigation" aria-label="Hovednavigasjon"><ul><li><a class="internal" href="./">Hjem</a></li><li><a class="internal" href="./personregister">Personregister</a></li><li><a class="internal" href="./Steder/">Steder</a></li><li><a class="internal" href="./Kilder/">Kilder</a></li></ul></nav><div class="levn-view-options" role="group" aria-label="Visningsvalg"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Mørk modus"><title>Mørk modus</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Lys modus"><title>Lys modus</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Læsemodus"><title>Læsemodus</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="levn-search"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Søk</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Søk etter noe" placeholder="Søk etter noe"/><div class="search-layout" data-preview="true"></div></div></div></div></div></header></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Forskningshistorikk</a></div></nav><h1 class="article-title">Forskningshistorikk</h1></div></div><article class="popover-hint"><p><a href="./Oversikt" class="internal alias" data-slug="Oversikt">Til forskningsstartsiden</a>.</p>
+<p>Dette er historiske arbeidsmeldinger med status på det tidspunktet de ble skrevet.
+Gjeldende status og innhold finnes i forslagene og person-/kildenotatene.
+Den tidligere loggen er bevart i opprinnelig rekkefølge; noen innførsler med samme
+dato står derfor ikke kronologisk. Nye meldinger legges øverst med faktisk dato.</p>
+<h2 id="syver-p-0001">Syver P-0001<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#syver-p-0001" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Personer/P-0001" class="internal alias" data-slug="Personer/P-0001">Til personsiden</a>.</p>
+<details>
+<summary>Behandlede forskningsforslag og tidligere status</summary>
+<p>Opplysningene i F-0001–F-0017 er registrert med synlige forbehold.
+<a href="./Innboks/F-0001" class="internal alias" data-slug="Innboks/F-0001">Forslag</a> · <a href="./Oversikt" class="internal alias" data-slug="Oversikt">Oversikt</a></p>
+<p><a href="./Innboks/F-0002" class="internal alias" data-slug="Innboks/F-0002">Behandlet forslag: folketellingen 1875</a>.</p>
+<p><a href="./Innboks/F-0003" class="internal alias" data-slug="Innboks/F-0003">Behandlet forslag: konfirmasjon 1889</a>.</p>
+<p><a href="./Innboks/F-0004" class="internal alias" data-slug="Innboks/F-0004">Behandlet forslag: folketellingen 1891</a>.</p>
+<p><a href="./Innboks/F-0005" class="internal alias" data-slug="Innboks/F-0005">Behandlet forslag: vielse 1897</a>.</p>
+<p><a href="./Innboks/F-0006" class="internal alias" data-slug="Innboks/F-0006">Behandlet forslag: klokkerbok til samme vielse</a>.</p>
+<p><a href="./Innboks/F-0007" class="internal alias" data-slug="Innboks/F-0007">Behandlet forslag: Ole, dåp 1898</a>. Foreldrekoblingen
+og tilleggsopplysningene er registrert med forbehold.</p>
+<p><a href="./Innboks/F-0008" class="internal alias" data-slug="Innboks/F-0008">Behandlet forslag: klokkerbok til Oles dåp</a>.</p>
+<p><a href="./Innboks/F-0009" class="internal alias" data-slug="Innboks/F-0009">Behandlet forslag: folketellingen 1900, Mikkelhus</a>.</p>
+<p><a href="./Innboks/F-0010" class="internal alias" data-slug="Innboks/F-0010">Behandlet forslag: Ivars dåp 1902</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0011" class="internal alias" data-slug="Innboks/F-0011">Behandlet forslag: Magnus’ dåp 1904</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0012" class="internal alias" data-slug="Innboks/F-0012">Behandlet forslag: Margits dåp 1906</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0013" class="internal alias" data-slug="Innboks/F-0013">Behandlet forslag: Mikkelhus 1910</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0014" class="internal alias" data-slug="Innboks/F-0014">Behandlet forslag: Borghilds dåp 1911</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0015" class="internal alias" data-slug="Innboks/F-0015">Behandlet forslag: Mikkelhus 1920</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0016" class="internal alias" data-slug="Innboks/F-0016">Behandlet forslag: dødsannonse 1975</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0017" class="internal alias" data-slug="Innboks/F-0017">Behandlet forslag: medaljediplom 1954</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0018" class="internal alias" data-slug="Innboks/F-0018">Behandlet forslag: Ryghs Frøisen øvre og nedre</a>.
+Stedsnotatet er beriket; ingen nye personopplysninger. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0019" class="internal alias" data-slug="Innboks/F-0019">Behandlet forslag: SSR-faktaark for Øvre Frøyse</a>.
+Moderne navnebelegg og sannsynlig moderne stedsreferanse er registrert med forbehold.</p>
+</details>
+<p>Spørsmålene på personsiden er redaksjonelt delt i kildeavvik og videre forskning. Ingen av de tidligere ubesvarte spørsmålene er lukket, og ingen godkjente usikre opplysninger er omgjort. Forslagene i utfoldingen og de historiske arbeidsmeldingene beholder sine tidligere statuser.</p>
+<h2 id="person-p-0002">Person P-0002<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#person-p-0002" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Personer/P-0002" class="internal alias" data-slug="Personer/P-0002">Ole Amundsen Frøyse øvre</a>.</p>
+<details>
+<summary>Behandlede forslag og tidligere status</summary>
+<p>Opplysningene i F-0001–F-0003 og F-0005–F-0006 er registrert med synlige forbehold.
+<a href="./Innboks/F-0001" class="internal alias" data-slug="Innboks/F-0001">Forslag</a> · <a href="./Oversikt" class="internal alias" data-slug="Oversikt">Oversikt</a></p>
+<p><a href="./Innboks/F-0002" class="internal alias" data-slug="Innboks/F-0002">Behandlet forslag: folketellingen 1875</a>.</p>
+<p><a href="./Innboks/F-0003" class="internal alias" data-slug="Innboks/F-0003">Behandlet forslag: Syvers konfirmasjon 1889</a>.</p>
+<p><a href="./Innboks/F-0005" class="internal alias" data-slug="Innboks/F-0005">Behandlet forslag: Syvers vielse 1897</a>.</p>
+<p><a href="./Innboks/F-0006" class="internal alias" data-slug="Innboks/F-0006">Behandlet forslag: klokkerbok til samme vielse</a>.</p>
+</details>
+<h2 id="person-p-0003">Person P-0003<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#person-p-0003" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Personer/P-0003" class="internal alias" data-slug="Personer/P-0003">Marthe Johnsdatt. Frøyse øvre</a>.</p>
+<details>
+<summary>Behandlede forslag og tidligere status</summary>
+<p>Opplysningene i F-0001–F-0003 er registrert med synlige forbehold.
+<a href="./Innboks/F-0001" class="internal alias" data-slug="Innboks/F-0001">Forslag</a> · <a href="./Oversikt" class="internal alias" data-slug="Oversikt">Oversikt</a></p>
+<p><a href="./Innboks/F-0002" class="internal alias" data-slug="Innboks/F-0002">Behandlet forslag: folketellingen 1875</a>.</p>
+<p><a href="./Innboks/F-0003" class="internal alias" data-slug="Innboks/F-0003">Behandlet forslag: Syvers konfirmasjon 1889</a>.</p>
+</details>
+<h2 id="person-p-0004">Person P-0004<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#person-p-0004" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Personer/P-0004" class="internal alias" data-slug="Personer/P-0004">Randine Olsdatter Frøsenvolden nedre</a>.</p>
+<details>
+<summary>Behandlede forslag og tidligere status</summary>
+<p>Registrert etter <a href="./Innboks/F-0002" class="internal alias" data-slug="Innboks/F-0002">F-0002</a>. <a href="./Oversikt" class="internal alias" data-slug="Oversikt">Oversikt</a>.</p>
+</details>
+<h2 id="person-p-0005">Person P-0005<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#person-p-0005" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Personer/P-0005" class="internal alias" data-slug="Personer/P-0005">Sina Olsdatter Frøsenvolden nedre</a>.</p>
+<details>
+<summary>Behandlede forslag og tidligere status</summary>
+<p>Registrert etter <a href="./Innboks/F-0002" class="internal alias" data-slug="Innboks/F-0002">F-0002</a> og <a href="./Innboks/F-0004" class="internal alias" data-slug="Innboks/F-0004">F-0004</a>, med forbehold. <a href="./Oversikt" class="internal alias" data-slug="Oversikt">Oversikt</a>.</p>
+<p><a href="./Innboks/F-0004" class="internal alias" data-slug="Innboks/F-0004">Behandlet forslag: folketellingen 1891</a>.</p>
+<p><a href="./Innboks/F-0008" class="internal alias" data-slug="Innboks/F-0008">Fadderkobling ved Oles dåp 1898, behandlet i F-0008</a>:
+brukeren vurderer Sina O. Frøisevolden som trolig samme person. Koblingen er
+registrert med dette forbeholdet; kildeformen og eldre bostedsledd er bevart.</p>
+</details>
+<h2 id="person-p-0006">Person P-0006<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#person-p-0006" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Personer/P-0006" class="internal alias" data-slug="Personer/P-0006">John Olsen Frøsenvolden nedre</a>.</p>
+<details>
+<summary>Behandlede forslag og tidligere status</summary>
+<p>Registrert etter <a href="./Innboks/F-0002" class="internal alias" data-slug="Innboks/F-0002">F-0002</a>. <a href="./Oversikt" class="internal alias" data-slug="Oversikt">Oversikt</a>.</p>
+</details>
+<h2 id="person-p-0007">Person P-0007<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#person-p-0007" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Personer/P-0007" class="internal alias" data-slug="Personer/P-0007">Agnete Olsdatter Frøsenvolden nedre</a>.</p>
+<details>
+<summary>Behandlede forslag og tidligere status</summary>
+<p>Registrert etter <a href="./Innboks/F-0002" class="internal alias" data-slug="Innboks/F-0002">F-0002</a>. <a href="./Oversikt" class="internal alias" data-slug="Oversikt">Oversikt</a>.</p>
+</details>
+<h2 id="person-p-0008">Person P-0008<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#person-p-0008" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Personer/P-0008" class="internal alias" data-slug="Personer/P-0008">Johanne Mortensdatr. Lier eie</a>.</p>
+<details>
+<summary>Behandlede forslag og tidligere status</summary>
+<p>Opplysningene er registrert med forbehold etter <a href="./Innboks/F-0005" class="internal alias" data-slug="Innboks/F-0005">F-0005</a>
+og <a href="./Innboks/F-0006" class="internal alias" data-slug="Innboks/F-0006">F-0006</a>, med tillegg fra
+<a href="./Innboks/F-0007" class="internal alias" data-slug="Innboks/F-0007">F-0007</a>, <a href="./Innboks/F-0008" class="internal alias" data-slug="Innboks/F-0008">F-0008</a> og
+<a href="./Innboks/F-0009" class="internal alias" data-slug="Innboks/F-0009">F-0009</a>, <a href="./Innboks/F-0010" class="internal alias" data-slug="Innboks/F-0010">F-0010</a> og
+<a href="./Innboks/F-0011" class="internal alias" data-slug="Innboks/F-0011">F-0011</a>, <a href="./Innboks/F-0012" class="internal alias" data-slug="Innboks/F-0012">F-0012</a>,
+<a href="./Innboks/F-0013" class="internal alias" data-slug="Innboks/F-0013">F-0013</a>, <a href="./Innboks/F-0014" class="internal alias" data-slug="Innboks/F-0014">F-0014</a> og
+<a href="./Innboks/F-0015" class="internal alias" data-slug="Innboks/F-0015">F-0015</a>.
+Martinsdtr/Mortensdatr./Mortensdtr/Mortensdttr. er bevart kildevis.
+Navneleddet bygger på oppgitt fødested, ikke dokumentert eget bosted.
+<a href="./Oversikt" class="internal alias" data-slug="Oversikt">Oversikt</a>. Ingen eldre kilder eller andre prosjekter er koblet inn.</p>
+<p><a href="./Innboks/F-0006" class="internal alias" data-slug="Innboks/F-0006">Behandlet forslag: klokkerbok til samme vielse</a>.</p>
+<p><a href="./Innboks/F-0007" class="internal alias" data-slug="Innboks/F-0007">Behandlet forslag: Ole, dåp 1898</a>. Foreldrekoblingen
+og tilleggsopplysningene er registrert med forbehold.</p>
+<p><a href="./Innboks/F-0008" class="internal alias" data-slug="Innboks/F-0008">Behandlet forslag: klokkerbok til Oles dåp</a>.</p>
+<p><a href="./Innboks/F-0009" class="internal alias" data-slug="Innboks/F-0009">Behandlet forslag: folketellingen 1900, Mikkelhus</a>.</p>
+<p><a href="./Innboks/F-0010" class="internal alias" data-slug="Innboks/F-0010">Behandlet forslag: Ivars dåp 1902</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0011" class="internal alias" data-slug="Innboks/F-0011">Behandlet forslag: Magnus’ dåp 1904</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0012" class="internal alias" data-slug="Innboks/F-0012">Behandlet forslag: Margits dåp 1906</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0013" class="internal alias" data-slug="Innboks/F-0013">Behandlet forslag: Mikkelhus 1910</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0014" class="internal alias" data-slug="Innboks/F-0014">Behandlet forslag: Borghilds dåp 1911</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0015" class="internal alias" data-slug="Innboks/F-0015">Behandlet forslag: Mikkelhus 1920</a>. Registrert med forbehold.</p>
+</details>
+<h2 id="person-p-0009">Person P-0009<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#person-p-0009" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Personer/P-0009" class="internal alias" data-slug="Personer/P-0009">Morten Olsen</a>.</p>
+<details>
+<summary>Behandlede forslag og tidligere status</summary>
+<p>Opplysningene er registrert med forbehold etter <a href="./Innboks/F-0005" class="internal alias" data-slug="Innboks/F-0005">F-0005</a>
+og <a href="./Innboks/F-0006" class="internal alias" data-slug="Innboks/F-0006">F-0006</a>. «Martin Olsen» er bevart fra K-0005.
+<a href="./Oversikt" class="internal alias" data-slug="Oversikt">Oversikt</a>.</p>
+<p><a href="./Innboks/F-0006" class="internal alias" data-slug="Innboks/F-0006">Behandlet forslag: klokkerbok til samme vielse</a>.</p>
+</details>
+<h2 id="person-p-0010">Person P-0010<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#person-p-0010" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Personer/P-0010" class="internal alias" data-slug="Personer/P-0010">Ole Syversen Frøisevolden</a>.</p>
+<details>
+<summary>Behandlede forslag og tidligere status</summary>
+<p>Opplysningene er registrert etter <a href="./Innboks/F-0007" class="internal alias" data-slug="Innboks/F-0007">F-0007</a> og
+<a href="./Innboks/F-0008" class="internal alias" data-slug="Innboks/F-0008">F-0008</a> og <a href="./Innboks/F-0009" class="internal alias" data-slug="Innboks/F-0009">F-0009</a>, med forbehold.
+Patronymet er utledet ved dåpen og eksplisitt skrevet i tellingen 1900;
+bostedsleddet er foreløpig kildeform via foreldrene ved dåpen.
+<a href="./Oversikt" class="internal alias" data-slug="Oversikt">Oversikt</a>.</p>
+<p><a href="./Innboks/F-0008" class="internal alias" data-slug="Innboks/F-0008">Behandlet forslag: klokkerbok til samme dåp</a>.</p>
+<p><a href="./Innboks/F-0009" class="internal alias" data-slug="Innboks/F-0009">Behandlet forslag: folketellingen 1900, Mikkelhus</a>.</p>
+<p><a href="./Innboks/F-0013" class="internal alias" data-slug="Innboks/F-0013">Behandlet forslag: Mikkelhus 1910</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0015" class="internal alias" data-slug="Innboks/F-0015">Behandlet forslag: Mikkelhus 1920</a>. Registrert med forbehold.</p>
+</details>
+<h2 id="person-p-0011">Person P-0011<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#person-p-0011" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Personer/P-0011" class="internal alias" data-slug="Personer/P-0011">Ivar Syversen Mikkelhus</a>.</p>
+<details>
+<summary>Behandlede forslag og tidligere status</summary>
+<p>Opplysningene er registrert etter F-0010 med forbehold. Ved dåpen er bare Ivar kildeskrevet; tellingen 1910 gir Ivar Syversen.
+Syversen er utledet fra far Syver, og Mikkelhus er foreløpig bostedsledd via
+foreldrene, godkjent separat fra antatt fødested.
+<a href="./Innboks/F-0010" class="internal alias" data-slug="Innboks/F-0010">Behandlet forslag F-0010</a> · <a href="./Oversikt" class="internal alias" data-slug="Oversikt">Oversikt</a>.</p>
+<p><a href="./Innboks/F-0013" class="internal alias" data-slug="Innboks/F-0013">Behandlet forslag: Mikkelhus 1910</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0015" class="internal alias" data-slug="Innboks/F-0015">Behandlet forslag: Mikkelhus 1920</a>. Registrert med forbehold.</p>
+</details>
+<h2 id="person-p-0012">Person P-0012<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#person-p-0012" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Personer/P-0012" class="internal alias" data-slug="Personer/P-0012">Magnus Syversen Mikkelhus</a>.</p>
+<details>
+<summary>Behandlede forslag og tidligere status</summary>
+<p>Opplysningene er registrert etter F-0011 med forbehold. Ved dåpen er bare Magnus kildeskrevet; tellingen 1910 gir Magnus Syversen.
+Syversen er utledet fra far Syver, og Mikkelhus er et foreløpig bostedsledd via
+foreldrene, godkjent separat fra antatt fødested.
+<a href="./Innboks/F-0011" class="internal alias" data-slug="Innboks/F-0011">Behandlet forslag F-0011</a> · <a href="./Oversikt" class="internal alias" data-slug="Oversikt">Oversikt</a>.</p>
+<p><a href="./Innboks/F-0013" class="internal alias" data-slug="Innboks/F-0013">Behandlet forslag: Mikkelhus 1910</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0015" class="internal alias" data-slug="Innboks/F-0015">Behandlet forslag: Mikkelhus 1920</a>. Registrert med forbehold.</p>
+</details>
+<h2 id="person-p-0013">Person P-0013<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#person-p-0013" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Personer/P-0013" class="internal alias" data-slug="Personer/P-0013">Margit Syversdatter Mikkelhus</a>.</p>
+<details>
+<summary>Behandlede forslag og tidligere status</summary>
+<p>Opplysningene er registrert etter F-0012 med forbehold. Bare Margit er kildeskrevet;
+Syversdatter er utledet fra far Syver, og Mikkelhus er et foreløpig bostedsledd
+via foreldrene, godkjent separat fra antatt fødested.
+<a href="./Innboks/F-0012" class="internal alias" data-slug="Innboks/F-0012">Behandlet forslag F-0012</a> · <a href="./Oversikt" class="internal alias" data-slug="Oversikt">Oversikt</a>.</p>
+<p><a href="./Innboks/F-0013" class="internal alias" data-slug="Innboks/F-0013">Behandlet forslag: Mikkelhus 1910</a>. Registrert med forbehold.</p>
+<p><a href="./Innboks/F-0015" class="internal alias" data-slug="Innboks/F-0015">Behandlet forslag: Mikkelhus 1920</a>. Registrert med forbehold.</p>
+</details>
+<h2 id="person-p-0014">Person P-0014<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#person-p-0014" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="./Personer/P-0014" class="internal alias" data-slug="Personer/P-0014">Borghild Syversdatter Mikkelhus</a>.</p>
+<details>
+<summary>Behandlede forslag og tidligere status</summary>
+<p>Opplysningene er registrert etter F-0014 med forbehold. Bare Borghild er kildeskrevet;
+Syversdatter er utledet fra far Syver, og Mikkelhus er et foreløpig bostedsledd
+via foreldrene, godkjent separat fra antatt fødested.
+<a href="./Innboks/F-0014" class="internal alias" data-slug="Innboks/F-0014">Behandlet forslag F-0014</a> · <a href="./Oversikt" class="internal alias" data-slug="Oversikt">Oversikt</a>.</p>
+<p><a href="./Innboks/F-0015" class="internal alias" data-slug="Innboks/F-0015">Behandlet forslag: Mikkelhus 1920</a>. Registrert med forbehold.</p>
+</details>
+<h2 id="status-og-logg">Status og logg<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#status-og-logg" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>2026-11-01: Begge punkter i <a href="./Innboks/F-0019" class="internal alias" data-slug="Innboks/F-0019">F-0019</a> er avkrysset uten merknader og registrert med svar og dato. S-0001 har moderne SSR-navnebelegg og sannsynlig referanse til objekt 51701 med registerpunkt, med historiske identitetsforbehold bevart. Forslaget er samlet i Syvers historikk og fjernet fra «Til vurdering». Syver, Ole og Marthe er gjennomgått; ingen personhendelser, navnevarianter eller godkjente tilknytninger er endret. Spørsmålet om sikker historisk stedsidentitet står åpent; Syvers spørsmål er presisert med nytt grunnlag. Fokus, neste skritt og publiseringsstatus beholdes.</p>
+<p>2026-11-01: Levert SSR-faktaark for Øvre Frøyse, stadnummer 51701, er bevart byteidentisk med SHA-256 i M-0019 og gjengitt i K-0019. <a href="./Innboks/F-0019" class="internal alias" data-slug="Innboks/F-0019">F-0019</a> har to ventende punkter: moderne navnebelegg og separat foreløpig stedsidentitet/kartpunkt. S-0001 og Oversikt er oppdatert. Syver, Ole og Marthe er gjennomgått uten nye personrader/navnevarianter; ingen åpne spørsmål er lukket. Fokus, neste skritt og publiseringsstatus beholdes.</p>
+<p>2026-11-01: Avkrysset punkt uten merknad i <a href="./Innboks/F-0018" class="internal alias" data-slug="Innboks/F-0018">F-0018</a> er
+registrert med svar og dato. S-0001 har nå Ryghs digitale stedsnavnbelegg fra
+K-0018, bind 4, side 192, med tidligere forbehold og brukerens valgte navn bevart.
+Trykt side, geografisk kapittelkontekst, separat nummerfordeling og moderne
+SSR-form er fortsatt ukontrollert. Syver, Ole og Marthe er gjennomgått; ingen
+personrader eller navnevarianter er endret, og ingen åpne spørsmål er lukket.
+Forslaget er samlet i Syvers historikk og fjernet fra «Til vurdering».
+Fokus, neste skritt og publiseringsstatus er uendret.</p>
+<p>2026-11-01: Rygh-HTML er bevart byteidentisk med SHA-256 i M-0018 og lest i K-0018. <a href="./Innboks/F-0018" class="internal alias" data-slug="Innboks/F-0018">F-0018</a> venter på vurdering av stedsnavnbelegget. S-0001 og Oversikt er oppdatert. Syver, Ole og Marthe er gjennomgått uten nye personopplysninger eller navnevarianter; ingen åpne spørsmål er lukket. Fokus og neste skritt beholdes.</p>
+<p>2026-11-01: Alle eksisterende personsider er gjennomgått mot Syvers struktur: korte konklusjoner, utfoldbart belegg, daterte navnegrupper, historikkinngang og kildebelagte åpne spørsmål. Foreløpige identiteter, kildestaving, forskningsgodkjenninger og ubesvarte spørsmål er bevart. Dette er redaksjonelt vedlikehold, ikke nye registreringer.</p>
+<p>2026-11-01: Syvers behandlede forslag er samlet i <a href="#syver-p-0001" class="internal alias">personens historikk</a>. Åpne spørsmål er delt i avvik og videre forskning, uten å lukke ubesvarte spørsmål eller endre registrerte forskningskonklusjoner.</p>
+<p>2026-11-01: Alle fire punkter i <a href="./Innboks/F-0017" class="internal alias" data-slug="Innboks/F-0017">F-0017</a> er avkrysset uten
+merknader og registrert med ett svar og dato per punkt. <a href="./Personer/P-0001" class="internal alias" data-slug="Personer/P-0001">Syver</a>
+har medaljetildeling 10.12.1954 ifølge diplomet og oppgitt 55 års tjeneste på
+Waalen gård i Ø.Gausdal. Eksisterende Syver Mikkelhus-rad er beriket med eldre
+eksplisitt diplombelegg. Ingen faktisk overrekkelse, eksakt ansettelsesperiode,
+bestemt stilling, eget bosted eller sikker identifikasjon av sønnenes arbeidsgiver
+er utledet. Proveniens og underskrifter er fortsatt uavklart. Forslaget er
+fjernet fra «Til vurdering». Fokusperson, neste skritt, primærnavn, original
+og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Brukerlevert fotografi av medaljediplom er bevart uendret som
+<a href="./Kilder/K-0017" class="internal alias" data-slug="Kilder/K-0017">K-0017</a>, med kontrollert SHA-256 i <a href="./Vedlegg/M-0017" class="internal alias" data-slug="Vedlegg/M-0017">M-0017</a>.
+Dokumentteksten er lest; underskrifter og fotografisk proveniens er uavklart.
+<a href="./Innboks/F-0017" class="internal alias" data-slug="Innboks/F-0017">F-0017</a> har fire ventende punkter om tildeling 10.12.1954,
+55 års tjeneste på Waalen gård i Ø.Gausdal og eldre belegg for Syver Mikkelhus.
+Ingen eksakt tiltredelsesdato, eget bosted, overrekkelse eller sikker kobling
+til sønnenes arbeidsgiver er utledet. Ingen nye personopplysninger, personer
+eller steder er registrert. Fokusperson, neste skritt og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Alle seks punkter i <a href="./Innboks/F-0016" class="internal alias" data-slug="Innboks/F-0016">F-0016</a> er avkrysset uten
+merknader og registrert med ett svar og dato per punkt. <a href="./Personer/P-0001" class="internal alias" data-slug="Personer/P-0001">Syver</a>
+har utledet dødsdato 19.04.1975 fra «i dag»/dateringslinjen og livsstatus avdød.
+Gausa er bare annonsens dateringssted. «Nær 101 år» beriker eksisterende
+fødselsgrunnlag uten å løse datoavviket. Syver Mikkelhus er nytt eksplisitt
+annonsebelegg, med primærnavn bevart. Begravelse 25.04.1975 kl. 13.00 fra
+Østre Gausdal kirke og minnestund er kunngjort/planlagt, ikke bekreftet gjennomført.
+Sverre Opphus er bare familiens representant; ingen ny person eller slektsrolle.
+Avis, utgave, publiseringsdato og side er fortsatt ukjent. Forslaget er fjernet
+fra «Til vurdering»; fokusperson, neste skritt, original og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Brukerlevert bilde av Syvers dødsannonse er bevart uendret som
+<a href="./Kilder/K-0016" class="internal alias" data-slug="Kilder/K-0016">K-0016</a>, med kontrollert SHA-256 i <a href="./Vedlegg/M-0016" class="internal alias" data-slug="Vedlegg/M-0016">M-0016</a>.
+Annonsen er transkribert; avis, utgave, publiseringsdato og side er ukjent.
+<a href="./Innboks/F-0016" class="internal alias" data-slug="Innboks/F-0016">F-0016</a> har seks ventende punkter. Dødsdato 19.04.1975
+er foreslått utledet fra «i dag» og dateringslinjen, Gausa er bare dateringssted,
+og begravelsen er kunngjort, ikke bekreftet gjennomført. Sverre Opphus er ikke
+gitt slektsrolle eller personside. Ingen nye opplysninger eller livsstatus er
+registrert på Syver. Fokusperson, neste skritt og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Alle 14 punkter i <a href="./Innboks/F-0015" class="internal alias" data-slug="Innboks/F-0015">F-0015</a> er avkrysset uten
+merknader og registrert med ett svar og dato per punkt. Sju eksisterende
+personer er koblet til husholdning 01 på Mikkelhus 01.12.1920 med godkjente
+identitetsforbehold. Bosted, familie-/sivilstand, arbeid/forsørgelse, oppgitt
+statsborgerskap/trossamfunn og mennenes oppgitte arbeidsdyktighet er ført.
+Eksisterende fødsels-, vielses-, navne- og familierader er beriket uten nye
+hendelsesduplikater. Syvers 04.06.1874 og Johannes foreløpige «7/5[?] 1897»
+er kildeavvik; hoveddatoene 13.06.1874 og 06.05.1897 er bevart. Fem barn/fem
+i live er ført som datert opplysning om nåværende ekteskap, uten nye barn.
+Alle sju fullformer har eksplisitt kildenavntype for 1920; tidligere utledede
+belegg og avvikende former består. S-0004 har historisk kontekst og antall,
+med bevarte steds-/eierskapsforbehold. Ingen nye personer, arbeidsgiveridentiteter
+eller sikre husmannstolkninger for sønnene. Forslaget er fjernet fra «Til vurdering».
+Fokusperson, neste skritt, primærnavn, originaler og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Levert bosteds-HTML og 15-siders PDF for Mikkelhus 1920 er bevart
+som <a href="./Kilder/K-0015" class="internal alias" data-slug="Kilder/K-0015">K-0015</a>, med kontrollerte SHA-256 i
+<a href="./Vedlegg/M-0015" class="internal alias" data-slug="Vedlegg/M-0015">M-0015</a>. Alle 15 skanninger er sett; register og bildelesning
+er skilt. <a href="./Innboks/F-0015" class="internal alias" data-slug="Innboks/F-0015">F-0015</a> har 14 ventende punkter for de sju
+eksisterende familiemedlemmene og S-0004. Syvers 4. juni 1874, Johannes
+usikkert leste vielsesdato, fem barn/fem i live og arbeid er kildevis bevart
+som forslagsgrunnlag. Ingen nye personer, registreringer eller primærnavneendringer.
+Fokusperson, neste skritt, tidligere godkjenninger og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Alle ni punkter i <a href="./Innboks/F-0014" class="internal alias" data-slug="Innboks/F-0014">F-0014</a> er avkrysset uten
+merknader og registrert med ett svar og dato per punkt. <a href="./Personer/P-0014" class="internal alias" data-slug="Personer/P-0014">Borghild</a>
+har fødsel 12.07.1911, dåp 20.08.1911 og gjensidige foreldrelenker med godkjente
+identitetsforbehold. Antatt fødested, utledet Syversdatter og bostedsledd via
+foreldrene er separat registrert. Syver/Johanne og S-0004 er beriket med
+foreldrebosted og kildebelegg. Syver Olsen Mikkelhus har eksplisitt kildenavn
+som type for 1911 på den eksisterende raden; eldre belegg er fortsatt utledet.
+Johannes presise tellingsdato og 1874-avvik er bevart. Stand og faddere er
+bevart som delvis og usikkert lest, uten sikker yrkesendring, bestemt antall
+eller nye fadderidentiteter. Forslaget er fjernet fra «Til vurdering».
+Fokusperson, neste skritt, originaler, kildeutdrag og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Tre leverte filer til Borghilds dåp 20.08.1911, klokkerbok side
+36/nr. 12, er bevart som <a href="./Kilder/K-0014" class="internal alias" data-slug="Kilder/K-0014">K-0014</a> med kontrollerte SHA-256 i
+<a href="./Vedlegg/M-0014" class="internal alias" data-slug="Vedlegg/M-0014">M-0014</a>. Register og bildelesning er skilt.
+<a href="./Innboks/F-0014" class="internal alias" data-slug="Innboks/F-0014">F-0014</a> har ni ventende punkter; <a href="./Personer/P-0014" class="internal alias" data-slug="Personer/P-0014">Borghild</a>
+er et utkast. Syver Olsen Mikkelhus er eksplisitt kildenavn i denne innførselen;
+tidligere utledede navnebelegg bevares. Stand og fadderfelt er delvis usikkert
+lest. Ingen oppgitte originaler mangler. Ingen nye familiekoblinger eller
+fadderidentiteter er registrert. Fokusperson, neste skritt, tidligere
+registreringer og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Alle ti punkter i <a href="./Innboks/F-0013" class="internal alias" data-slug="Innboks/F-0013">F-0013</a> er avkrysset uten
+merknader og registrert med svar og dato per punkt. De seks eksisterende
+familiemedlemmene er koblet til husholdning 01 på Mikkelhus 01.12.1910 med
+godkjente identitetsforbehold. Bosted, familie-/sivilstand og datert livsstilling
+er ført; eksisterende fødsels-, navne- og familierader er beriket uten nye
+personer eller fødselshendelser. Johannes 28.11.1873 er registrert retrospektivt,
+med 1874-avviket fra 1902 bevart. Ole Syversen %Olsen% og Margit Syversen er
+bevart kildevis. Ivar/Magnus har eksplisitte tellingsnavn og direkte bostedsbelegg;
+tidligere dåpsutledninger og alle primærnavn/sorteringsledd er bevart.
+S-0004 har historisk 1910-kontekst og antall med bevarte steds-/eierskapsforbehold.
+Forslaget er fjernet fra «Til vurdering»; fokusperson og neste skritt er bevart.
+Originaler, registerutdrag, bildelesning og publiseringsstatus er uendret.</p>
+<p>2026-11-01: Levert bosteds-HTML og tosiders PDF for Mikkelhus 1910 er bevart
+som <a href="./Kilder/K-0013" class="internal alias" data-slug="Kilder/K-0013">K-0013</a>, med kontrollerte SHA-256 i
+<a href="./Vedlegg/M-0013" class="internal alias" data-slug="Vedlegg/M-0013">M-0013</a>. Begge PDF-sider og skanninger er visuelt lest;
+register og bildelesning er skilt. <a href="./Innboks/F-0013" class="internal alias" data-slug="Innboks/F-0013">F-0013</a> har ti ventende
+punkter for de seks eksisterende familiemedlemmene og S-0004. Johannes
+28.11.1873, Oles overstrøkne Olsen og Margit Syversen er kildevis bevart som
+forslagsgrunnlag. Ingen nye personer, registreringer eller primærnavneendringer.
+Fokusperson, neste skritt, tidligere godkjenninger og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Alle ni punkter i <a href="./Innboks/F-0012" class="internal alias" data-slug="Innboks/F-0012">F-0012</a> er avkrysset uten
+merknader og registrert med ett svar og registreringsdato per punkt.
+<a href="./Personer/P-0013" class="internal alias" data-slug="Personer/P-0013">Margit</a> har fødsel 22.09.1906, dåp 11.11.1906 og gjensidige
+foreldrelenker med godkjente identitetsforbehold. Antatt fødested Mikkelhus,
+utledet Syversdatter og bostedsledd via foreldrene er separat registrert.
+Syver/Johanne og S-0004 er beriket med foreldrebosted, kildeår og navneformer;
+fars bosted bygger på bildet, morens også på registeret. Johannes 1874-avvik
+fra 1902 består. Stand og faddere er bevart som delvis og usikkert lest,
+uten sikker yrkesendring, bestemt fadderantall eller nye fadderidentiteter.
+Forslaget er fjernet fra «Til vurdering»; fokusperson og neste skritt er bevart.
+Originaler, registerutdrag, bildelesning og publiseringsstatus er uendret.</p>
+<p>2026-11-01: Tre leverte filer til Margits dåp 11.11.1906, ministerialbok side
+47/nr. 15, er bevart som <a href="./Kilder/K-0012" class="internal alias" data-slug="Kilder/K-0012">K-0012</a> med kontrollerte SHA-256 i
+<a href="./Vedlegg/M-0012" class="internal alias" data-slug="Vedlegg/M-0012">M-0012</a>. Register og bildelesning er skilt; registeret har
+bosted bare på mor, mens bildet har felles foreldrebosted Mikkelhus og «ægte».
+<a href="./Innboks/F-0012" class="internal alias" data-slug="Innboks/F-0012">F-0012</a> har ni ventende punkter; <a href="./Personer/P-0013" class="internal alias" data-slug="Personer/P-0013">Margit</a>
+er et utkast. Stand og fadderfelt er bare delvis lest; ingen oppgitte originaler
+mangler. Ingen nye familiekoblinger eller fadderidentiteter er registrert.
+Fokusperson, neste skritt, tidligere registreringer og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Alle ni punkter i <a href="./Innboks/F-0011" class="internal alias" data-slug="Innboks/F-0011">F-0011</a> er avkrysset uten
+merknader og registrert med svar og dato. <a href="./Personer/P-0012" class="internal alias" data-slug="Personer/P-0012">Magnus</a> har
+fødsel 21.03.1904, dåp 12.05.1904 og gjensidige foreldrelenker med godkjente
+identitetsforbehold. Antatt fødested Mikkelhus, utledet Syversen og bostedsledd
+via foreldrene er separat registrert med bevarte forbehold. Fem fadderroller
+er ført kildevis uten nye identitetskoblinger. Syver/Johanne har datert
+foreldrebosted og stand; eksisterende fødsels-/navnerader og S-0004 er beriket
+uten dubletter. Johannes 1873 støttes av K-0011, mens 1874-avviket fra 1902
+består. Forslaget er fjernet fra «Til vurdering». Fokusperson og neste skritt,
+tidligere kildeutdrag, originaler og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Tre leverte filer til Magnus’ dåp 12.05.1904, klokkerbok side 56/nr. 8,
+er bevart som <a href="./Kilder/K-0011" class="internal alias" data-slug="Kilder/K-0011">K-0011</a>, med kontrollerte SHA-256 i
+<a href="./Vedlegg/M-0011" class="internal alias" data-slug="Vedlegg/M-0011">M-0011</a>. Register og egen bildelesning er skilt.
+<a href="./Innboks/F-0011" class="internal alias" data-slug="Innboks/F-0011">F-0011</a> har ni ventende punkter; <a href="./Personer/P-0012" class="internal alias" data-slug="Personer/P-0012">Magnus</a>
+er et utkast. Johannes 1873 er bevart uten å oppheve kildeavviket 1874 fra 1902.
+Fødestedsantakelse, patronym og bostedsledd via foreldrene vurderes separat.
+Ingen nye familiekoblinger eller fadderidentiteter er registrert. Fokusperson,
+neste skritt, tidligere registreringer og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Alle ni punkter i <a href="./Innboks/F-0010" class="internal alias" data-slug="Innboks/F-0010">F-0010</a> er avkrysset uten
+merknader og registrert med svar og dato. <a href="./Personer/P-0011" class="internal alias" data-slug="Personer/P-0011">Ivar</a> har
+fødsel 30.03.1902, dåp 04.05.1902 og gjensidige foreldrelenker med godkjent
+identitetsforbehold. Antatt fødested Mikkelhus, utledet Syversen og bostedsledd
+via foreldrene er separat registrert med sine forbehold. Fem fadderroller er
+ført uten nye identitetskoblinger. Syver/Johanne har datert foreldrebosted og
+stand; eksisterende fødsels-/navnerader er beriket, og Johannes 1874 er bevart
+som avvik mot tidligere 1873. S-0004 er supplert med kildeomtalen. Forslaget
+er fjernet fra «Til vurdering»; fokusperson og neste skritt er bevart.
+Originaler, kildeutdrag og publiseringsstatus er uendret.</p>
+<p>2026-11-01: Tre leverte filer til Ivars dåp 04.05.1902, klokkerbok side 45/nr. 8,
+er bevart som <a href="./Kilder/K-0010" class="internal alias" data-slug="Kilder/K-0010">K-0010</a> med kontrollerte SHA-256 i
+<a href="./Vedlegg/M-0010" class="internal alias" data-slug="Vedlegg/M-0010">M-0010</a>. Register og egen bildelesning er skilt.
+<a href="./Innboks/F-0010" class="internal alias" data-slug="Innboks/F-0010">F-0010</a> har ni ventende punkter; <a href="./Personer/P-0011" class="internal alias" data-slug="Personer/P-0011">Ivar</a>
+er et utkast. Johannes fødselsår 1874 er bevart som avvik mot tidligere 1873.
+Barnets fødested, utledet patronym og tilknytning via foreldrebosted vurderes
+separat. Foreldrenes eksisterende registreringer, fokus/neste skritt og
+publiseringsstatus er bevart. Ingen faddere er identitetskoblet.</p>
+<h3 id="navnegjennomgang-2026-11-01">Navnegjennomgang 2026-11-01<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#navnegjennomgang-2026-11-01" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>2026-11-01: Etter brukerens instruksjon i issue #13 er alle ti personsider
+gjennomgått mot registrerte K-0001–K-0009 og behandlede F-0001–F-0009.
+27 fullstendige navnerader er tilført: 21 utledede bostedsbaserte varianter,
+fire samlede kildenavn fra allerede dokumentert bildelesning og to bevarte
+brukervalg for Johanne. Doble rader for Ole Amundsen er samlet med alle belegg.
+Eksisterende navnebelegg har fått tidsangivelse, og utdaterte formuleringer om
+uundersøkt senere navnebruk er presisert. Ingen tidligere kildenavn måtte
+omklassifiseres til utledet variant; skillet er gjort eksplisitt for tilførslene.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Gjennomgått grunnlag</th><th>Registrert komplettering og avgrensning</th></tr></thead><tbody><tr><td><a href="./Kilder/K-0001" class="internal alias" data-slug="Kilder/K-0001">Dåpen 1874</a> · <a href="./Innboks/F-0001" class="internal alias" data-slug="Innboks/F-0001">behandlet forslag</a></td><td>Syver/Ole/Marthe: tidligere godkjente normaliserte primærnavneformer er synlige som utledede varianter. Syvers tilknytning via far og Marthes antatte felles bosted er fortsatt indirekte.</td></tr><tr><td><a href="./Kilder/K-0002" class="internal alias" data-slug="Kilder/K-0002">Tellingen 1875</a> · <a href="./Innboks/F-0002" class="internal alias" data-slug="Innboks/F-0002">behandlet forslag</a></td><td>Alle sju registrerte personer har variant fra egen kildeform og Frøsenvolden nedre. Karen/Olaus i husholdning 02 er ikke koblet til personene.</td></tr><tr><td><a href="./Kilder/K-0003" class="internal alias" data-slug="Kilder/K-0003">Konfirmasjonen 1889</a> · <a href="./Innboks/F-0003" class="internal alias" data-slug="Innboks/F-0003">behandlet forslag</a></td><td>Syver har Frøsevolden-variant. Foreldrenes navn er kontrollert, men de får ikke sønnens bostedsledd uten eget belegg.</td></tr><tr><td><a href="./Kilder/K-0004" class="internal alias" data-slug="Kilder/K-0004">Tellingen 1891</a> · <a href="./Innboks/F-0004" class="internal alias" data-slug="Innboks/F-0004">behandlet forslag</a></td><td>Syver/Sina har Hovde-varianter med sannsynlige identiteter. Bostedsarket er ikke lest; Matia Martensdatter er ikke koblet til Johanne eller en ny person.</td></tr><tr><td><a href="./Kilder/K-0005" class="internal alias" data-slug="Kilder/K-0005">Vielsen, ministerialbok</a> og <a href="./Kilder/K-0006" class="internal alias" data-slug="Kilder/K-0006">klokkerbok</a> · <a href="./Innboks/F-0005" class="internal alias" data-slug="Innboks/F-0005">F-0005</a>, <a href="./Innboks/F-0006" class="internal alias" data-slug="Innboks/F-0006">F-0006</a></td><td>Syvers godkjente Frøsterveden-form er bevart med avviket. Samlede bildenavn for Johanne/Ole/Morten ved Hovdbakken/Frøsenvolden er ført som kildenavn. Johannes brukervalg Lier eie er ikke gjort til dokumentert eget bosted. Martin Olsen får ikke Hovdbakken gjennom fri kombinasjon med den andre boken.</td></tr><tr><td><a href="./Kilder/K-0007" class="internal alias" data-slug="Kilder/K-0007">Oles dåp, ministerialbok</a> og <a href="./Kilder/K-0008" class="internal alias" data-slug="Kilder/K-0008">klokkerbok</a> · <a href="./Innboks/F-0007" class="internal alias" data-slug="Innboks/F-0007">F-0007</a>, <a href="./Innboks/F-0008" class="internal alias" data-slug="Innboks/F-0008">F-0008</a></td><td>Syver/Johanne får Frøisevolden-varianter fra hver omtales navneform. Oles godkjente tilknytning via foreldrene er bevart; barnets eget bostedsfelt er tomt. Sina O. Frøisevolden er ført som samlet bildenavn, med brukerens sannsynlige identitetskobling og uendret initial. Andre faddere er ikke identifisert.</td></tr><tr><td><a href="./Kilder/K-0009" class="internal alias" data-slug="Kilder/K-0009">Tellingen 1900</a> · <a href="./Innboks/F-0009" class="internal alias" data-slug="Innboks/F-0009">behandlet forslag</a></td><td>Syver Olsen Mikkelhus, Johanne Mortensdatter Mikkelhus og Ole Syversen Mikkelhus er utledede varianter fra dokumenterte egne bosteder; husholdning 02 er ikke koblet til familien.</td></tr></tbody></table></div>
+<p>Uavklart er fortsatt stedsidentiteten mellom de ulike Frøse-/Frøise-formene,
+bildelesningen bak Frøsterveden, manglende bostedsark for Hovde og de tidligere
+foreløpige identitetene. Dette er bevarte forbehold og åpne spørsmål, ikke nye
+koblinger eller gjenåpning av avsluttede vurderinger. Det er ikke laget noe nytt
+forskningsforslag: kompletteringene følger brukerens autorisasjon og allerede
+godkjente grunnlag. Alle primærnavn, sorteringsledd, kildeavskrifter, tidligere
+merknader/godkjenninger, originalvedlegg og publiseringsstatuser er bevart.</p>
+<p>2026-11-01: Alle åtte punkter i F-0009 er avkrysset uten merknader og registrert
+med svar og dato. Syver/Johanne/Ole er sannsynlig koblet til husholdning 01 på
+Mikkelhus 03.12.1900. Bosted, familie-/sivilstand og datert arbeid er ført;
+eksisterende fødsels-/navne- og familierader er beriket, uten nye fødselsrader.
+Ole Syversen er eksplisitt navnebelegg; primærnavnene er bevart. S-0004 har
+historisk matrikkelkontekst og jordbrukssvar, med sted-/eierskapsforbehold.
+Husholdning 02 er ikke koblet til familien. Kildeutdrag, originaler, tidligere
+forbehold og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Bosteds-HTML og tosiders PDF for Mikkelhus 1900 er bevart som
+K-0009 med SHA-256 i M-0009. Begge skanninger er visuelt lest; register og
+bildelesning er skilt. F-0009 har åtte ventende punkter, S-0004 er et utkast.
+Husholdning 01 og 02 holdes adskilt; ingen nye personer eller familiekoblinger
+er registrert. Tellingens dato er 03.12.1900, ikke en flyttedato. Primærnavn,
+tidligere godkjenninger og publiseringsstatus er uendret.</p>
+<p>2026-11-01: Alle seks punkter i F-0008 er behandlet og registrert. K-0008 er
+tilleggskilde til eksisterende fødsel, dåp, navn, familie og foreldrebosted;
+Syvers «Hmd.» og Johannes «h.» er registrert ved innførselen 20.02.1898.
+Fem faddere er omtalt ved Oles dåp. Brukerens merknad om Sina O. Frøisevolden
+er fulgt opp som sannsynlig kobling til P-0005, med attribusjon, gjensidige
+henvisninger og bevart mulig søsken-/halvsøskenforhold. Ingen nye personer
+eller ekstra fødsels-/dåpshendelser er opprettet. Merknaden har svar og dato;
+registerutdrag, originaler og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Tre leverte klokkerbokfiler til dåp 20.02.1898, side 22/nr. 8,
+er bevart som K-0008 med SHA-256 i M-0008. F-0008 har seks ventende punkter
+om samme dåp/personer, ektefødt-føring, bosted, foreldrenes stand og fem faddere.
+Fadderen Sina O. er ikke koblet til Sina P-0005; ministerialbokens tidligere
+foreløpige lesning er bevart med krysshenvisning. Ingen nye personer eller
+livsløpshendelser er opprettet. Tidligere godkjenninger og publiseringsstatus er uendret.</p>
+<p>2026-11-01: Alle ni punkter i F-0007 er avkrysset uten merknader og registrert.
+Ole Syversen Frøisevolden har registrert fødsel, dåp og foreldre med gjensidige
+familielenker. Antatt fødested, utledet patronym og foreløpig bostedsledd er
+bevart med separate grunnlag. Syver/Johanne har bosted ved innførselen og
+tilleggskilde til eksisterende fødsels-/navneopplysninger; ingen nye fødselsrader.
+«ægte» er fortsatt bildelesning, og førsteplass i en barnerekke er ikke fastslått.
+Fadderfelt/stand gjenstår. Originaler, registerutdrag og publiseringsstatus er bevart.</p>
+<p>2026-11-01: Tre leverte filer til dåpsinnførsel 7, side 2, 1898, er bevart som
+K-0007 med SHA-256 i M-0007. F-0007 har ni ventende punkter; P-0010 er et
+utkast. Register og bildelesning er skilt, med «ægte» bare fra bildet og
+foreldrebostedets ulike plassering i register/bilde presisert. Antatt fødested,
+utledet patronym og foreløpig bostedsledd vurderes separat. Fadderfelt/stand er
+ikke ferdig lest. Ingen ny familierelasjon er registrert på foreldresidene;
+«første dåp» er ikke verifisert som plass i en barnerekke. Tidligere registreringer
+og publiseringsstatus er bevart.</p>
+<p>2026-10-31: Oppsett og forslag laget på grunnlag av hentet register og kildebilde.
+Utkast er ikke faktisk registrering. Ingen forskningsgodkjenning er mottatt.
+Ingen offentlig publisering.</p>
+<p>2026-10-31: Etter brukerens test er personsidene samlet i tabeller, med snarveier
+til forslag/oversikt. F-0001 har uavkryssede punkter og merknadsplass; rutinen støtter
+delvis godkjenning. Oles navnerettelse er beholdt. Ny utforming er ikke brukertestet.</p>
+<p>2026-10-31: Brukeren har krysset av og kommentert F-0001. Seks uendrede punkter
+er registrert med forbehold: fødsel/navn, dåp, far, mor, utledet patronym og
+bostedsnormalisering for Syver/Ole. Ny bildelesning støtter ektefødt-føringen.
+Tre nye/reviderte utledninger venter: fødested på gårdsnivå, ekteskap og mors
+bosted/navneledd. Merknader er bevart med svar. Publiseringsstatus er uendret.</p>
+<p>2026-10-31: Brukeren har godkjent de tre reviderte utledningene. Fødested på
+gårdsnivå, antatt ekteskap og Marthes antatte bosted/navneledd er registrert med
+forbehold. Alle ni punkter i F-0001 er ferdig behandlet. Merknaden om vielsessøk
+er fulgt opp på begge foreldresider: trolig gift før 19.07.1874, med dåpsdatoen
+som foreløpig øvre søkegrense. Ingen nye kilder er undersøkt. Publiseringsstatus
+og originalvedlegg er uendret.</p>
+<p>2026-10-31: Tre lokale filer til folketellingen 1875 er bevart som K-0002 med
+kontrollsummer og én samlet kildeomtale. F-0002 har sju ventende punkter.
+S-0002 er en separat foreløpig kildeomtale; ingen steds- eller personidentitet
+er automatisk slått sammen. Tidligere godkjenninger og publiseringsstatus er uendret.</p>
+<p>2026-10-31: Alle sju punkter i F-0002 er godkjent og registrert med forbehold.
+Tellingen er koblet til Syver/Ole/Marthe; fire foreløpige barnesider er opprettet.
+Oles yrke er datert og kildebelagt. Brukerens mulige plasstilknytning og utlegging
+av jordbrukskodene er bevart med tydelig attribusjon. Merknader har svar og punktene
+registreringsdato. F-0001, kildeutdrag, originalvedlegg og publiseringsstatus er uendret.</p>
+<p>2026-10-31: Syvers to fødselsrader er samlet til én hendelse med begge kilder og
+presis kildefordeling. Jordbrukskodene har fått RHDs forkortelsesoversikt og
+1875-veiledning som grunnlag, med kategorier og enhetsforbehold presisert.
+Registeravskrift, originalvedlegg og tidligere godkjenninger er bevart.</p>
+<p>2026-10-31: Tre leverte filer til konfirmasjonsinnførsel 28, 28.04.1889, er
+bevart som K-0003 med SHA-256 i M-0003. F-0003 har seks ventende punkter om
+identitet, konfirmasjon, bosted, tilleggskilde, vaksinasjon og farens stand.
+Registerform og usikker bildelesning er adskilt; Frøsevolden er ikke automatisk
+slått sammen med Frøsenvolden nedre. Personsider har bare lenke til forslaget;
+ingen nye hendelser eller kildekoblinger er registrert der. Tidligere godkjenninger
+og publiseringsstatus er uendret.</p>
+<p>2026-10-31: Alle seks punkter i F-0003 er avkrysset uten merknader og registrert.
+K-0003 er koblet til Syver/Ole/Marthe. Syver har én konfirmasjons-/bostedsrad
+og oppgitt vaksinasjon med retrospektivt kildeforbehold; eksisterende fødsel,
+navn og foreldrerelasjoner har fått tilleggskilde. Ole har «Hmd.» datert
+28.04.1889. Frøsevolden er ikke slått sammen med Frøsenvolden nedre.
+Kildeutdrag, originalvedlegg, tidligere forbehold og publiseringsstatus er bevart.</p>
+<p>2026-10-31: Tre leverte filer til tellingen 1891 ved Hovde er bevart som K-0004
+med SHA-256 i M-0004. PDF-en har personsedler for Syver, Matia og Sina; register
+og bildelesning er adskilt. F-0004 har sju ventende punkter, med separate
+identitetsvurderinger for Syver/Sina og yrkeslesning fra bildene. Søskenforhold
+er ikke oppgitt i denne tellingen. Hovde er en kildeomtale i S-0003; ingen
+nye personopplysninger er registrert. Bostedsbildet ft20100129321074 trengs for
+selvstendig bildelesning av navn/matrikkel og eventuell husholdningsinndeling.
+Tidligere registreringer, originaler og publiseringsstatus er uendret.</p>
+<p>2026-10-31: Alle sju punkter i F-0004 er avkrysset uten merknader og registrert
+med forbehold. Syver og Sina er sannsynlig koblet til personene 004/006 ved
+Hovde per 01.01.1891. Telling/bosted, ugiftstatus og tjenestestilling er registrert;
+arbeid er ført fra bildelesning, Sinas «Budeie[?]» fortsatt usikkert. Eksisterende
+fødsels- og navnerader har fått tilleggskilde. Mulig søsken-/halvsøskenforhold og
+uavklart morskap er uendret. Bostedsarket er fortsatt ikke lest. Originaler,
+registerutdrag og publiseringsstatus er bevart.</p>
+<p>2026-10-31: Tre leverte filer til vielse 06.05.1897 er bevart som K-0005,
+med SHA-256 i M-0005. F-0005 har ni ventende punkter. Johanne Martinsdtr og
+Martin Olsen har korte, tydelig ventende utkast P-0008/P-0009. Registerets
+fødesteds- og bostedsformer for Syver holdes adskilt; usikker bildelesning
+erstatter ikke avskriften. Ingen ny vielse eller familierelasjon er registrert
+på eksisterende personsider. Tidligere godkjenninger, originaler og
+publiseringsstatus er uendret.</p>
+<p>2026-10-31: Alle ni punkter i F-0005 er behandlet og registrert. Brukerens
+uttrykkelige beslutning om «Lier eie» i Johannes primærnavn er fulgt, som et
+brukervalgt navneledd fra oppgitt fødested, ikke dokumentert eget bosted.
+Vielse 06.05.1897, lysing fra bildet og gjensidige familieforbindelser er ført.
+Syvers fødsel har fortsatt én rad med ulike kildegrunnlag; «Frøisevolden» og
+«Frøsterveden» er ikke slått sammen. Usikker «Husmd.[?]» er bevart for Syver/Ole.
+Originaler, kildeavskrift og publiseringsstatus er uendret.</p>
+<p>2026-10-31: Fire leverte filer fra klokkerboka til vielsen 06.05.1897 er bevart
+som K-0006 med SHA-256 i M-0006. F-0006 har åtte ventende punkter, inkludert
+navneavvikene Mortensdatr./Martinsdtr og Morten/Martin, nye bostedsopplysninger
+og tydeligere stand. Dette er foreslått som tilleggskilde til eksisterende
+hendelse, ikke en ny vielse. Ingen nye personer eller stedsidentiteter er
+opprettet. Tidligere godkjenninger, avskrifter, originaler og publiseringsstatus
+er bevart; primærnavn og nye opplysninger venter på vurdering.</p>
+<p>2026-10-31: Alle åtte punkter i F-0006 er avkrysset uten merknader og registrert.
+Primærnavnene er nå Johanne Mortensdatr. Lier eie og Morten Olsen, med
+Martinsdtr/Martin bevart kildevis og farskoblingen fortsatt foreløpig.
+Vielse, lysing, fødsel og standsopplysninger er beriket med K-0006; ingen nye
+vielses-/fødselsrader er opprettet. Bosteder og kirkelige opplysninger er ført
+med dato-/stedsforbehold; «Ikke i slægt» er tillagt kilden, ikke brukt som en
+selvstendig slektsutredning. Originaler, avskrifter og publiseringsstatus er bevart.</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-0" aria-expanded="true"><h3>Oversikt</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#syver-p-0001" data-for="syver-p-0001">Syver P-0001</a></li><li class="depth-0"><a href="#person-p-0002" data-for="person-p-0002">Person P-0002</a></li><li class="depth-0"><a href="#person-p-0003" data-for="person-p-0003">Person P-0003</a></li><li class="depth-0"><a href="#person-p-0004" data-for="person-p-0004">Person P-0004</a></li><li class="depth-0"><a href="#person-p-0005" data-for="person-p-0005">Person P-0005</a></li><li class="depth-0"><a href="#person-p-0006" data-for="person-p-0006">Person P-0006</a></li><li class="depth-0"><a href="#person-p-0007" data-for="person-p-0007">Person P-0007</a></li><li class="depth-0"><a href="#person-p-0008" data-for="person-p-0008">Person P-0008</a></li><li class="depth-0"><a href="#person-p-0009" data-for="person-p-0009">Person P-0009</a></li><li class="depth-0"><a href="#person-p-0010" data-for="person-p-0010">Person P-0010</a></li><li class="depth-0"><a href="#person-p-0011" data-for="person-p-0011">Person P-0011</a></li><li class="depth-0"><a href="#person-p-0012" data-for="person-p-0012">Person P-0012</a></li><li class="depth-0"><a href="#person-p-0013" data-for="person-p-0013">Person P-0013</a></li><li class="depth-0"><a href="#person-p-0014" data-for="person-p-0014">Person P-0014</a></li><li class="depth-0"><a href="#status-og-logg" data-for="status-og-logg">Status og logg</a></li><li class="depth-1"><a href="#navnegjennomgang-2026-11-01" data-for="navnegjennomgang-2026-11-01">Navnegjennomgang 2026-11-01</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Tilbakekoblinger</h3><ul id="list-1" class="overflow"><li><a href="./Oversikt" class="internal">Levn — Fra kilder til livshistorier</a></li><li><a href="./Personer/P-0001" class="internal">Syver Olsen Frøyse øvre</a></li><li><a href="./Personer/P-0002" class="internal">Ole Amundsen Frøyse øvre</a></li><li><a href="./Personer/P-0003" class="internal">Marthe Johnsdatt. Frøyse øvre</a></li><li><a href="./Personer/P-0004" class="internal">Randine Olsdatter Frøsenvolden nedre</a></li><li><a href="./Personer/P-0005" class="internal">Sina Olsdatter Frøsenvolden nedre</a></li><li><a href="./Personer/P-0006" class="internal">John Olsen Frøsenvolden nedre</a></li><li><a href="./Personer/P-0007" class="internal">Agnete Olsdatter Frøsenvolden nedre</a></li><li><a href="./Personer/P-0008" class="internal">Johanne Mortensdatr. Lier eie</a></li><li><a href="./Personer/P-0009" class="internal">Morten Olsen</a></li><li><a href="./Personer/P-0010" class="internal">Ole Syversen Frøisevolden</a></li><li><a href="./Personer/P-0011" class="internal">Ivar Syversen Mikkelhus</a></li><li><a href="./Personer/P-0012" class="internal">Magnus Syversen Mikkelhus</a></li><li><a href="./Personer/P-0013" class="internal">Margit Syversdatter Mikkelhus</a></li><li><a href="./Personer/P-0014" class="internal">Borghild Syversdatter Mikkelhus</a></li><li><a href="./" class="internal">Levn — Fra kilder til livshistorier</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Laget med <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}container;content;isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="./postscript.js" type="module"></script></html>
